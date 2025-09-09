@@ -9,11 +9,11 @@ import {
   MapPin, 
   Github, 
   Linkedin, 
-  Twitter,
   Send,
   Calendar,
   Coffee,
-  MessageSquare
+  MessageSquare,
+  MessageCircle
 } from "lucide-react";
 
 const Contact = () => {
@@ -21,21 +21,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "dev.senior@email.com",
-      href: "mailto:dev.senior@email.com",
+      value: "tdrummontt@email.com",
+      href: "mailto:tdrummontt@email.com",
       description: "Resposta em até 24h"
     },
     {
-      icon: Phone,
-      label: "Telefone",
-      value: "+55 (11) 99999-9999",
-      href: "tel:+5511999999999",
-      description: "WhatsApp disponível"
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "+55 (91) 98420-1810",
+      href: "https://wa.me/5591984201810?text=Olá! Vim através do seu portfólio e gostaria de conversar sobre um projeto.",
+      description: "Resposta em até 2 horas"
     },
     {
       icon: MapPin,
       label: "Localização",
-      value: "São Paulo, Brasil",
+      value: "Belém - PA",
       href: "#",
       description: "Timezone: UTC-3"
     },
@@ -53,23 +53,16 @@ const Contact = () => {
       icon: Github, 
       label: "GitHub", 
       href: "https://github.com",
-      username: "@devsenior",
+      username: "@Tdrummont",
       followers: "2.5k"
     },
     { 
       icon: Linkedin, 
       label: "LinkedIn", 
       href: "https://linkedin.com",
-      username: "@dev-senior",
-      followers: "5k+"
+      username: "@thalita-s-costa",
+      followers: "741+"
     },
-    { 
-      icon: Twitter, 
-      label: "Twitter", 
-      href: "https://twitter.com",
-      username: "@devsenior",
-      followers: "1.2k"
-    }
   ];
 
   const services = [
@@ -105,99 +98,60 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Form */}
+          {/* WhatsApp Contact */}
           <div className="lg:col-span-2 animate-fade-in">
             <Card className="border-0 shadow-tech bg-card/80 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2 text-2xl">
-                  <Send className="w-6 h-6 text-primary" />
-                  <span>Envie sua Mensagem</span>
+                  <MessageCircle className="w-6 h-6 text-green-500" />
+                  <span>Vamos Conversar no WhatsApp</span>
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Preencha o formulário abaixo e retornarei o contato em breve
+                  A forma mais rápida e direta de entrar em contato comigo
                 </p>
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">
-                      Nome Completo *
-                    </label>
-                    <Input 
-                      placeholder="Seu nome"
-                      className="bg-background/50 border-border/50 focus:border-primary transition-colors"
-                    />
+                <div className="text-center py-8">
+                  <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MessageCircle className="w-10 h-10 text-white" />
                   </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">
-                      Email *
-                    </label>
-                    <Input 
-                      type="email"
-                      placeholder="seu@email.com"
-                      className="bg-background/50 border-border/50 focus:border-primary transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">
-                    Tipo de Projeto
-                  </label>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                    {["Aplicação Web", "Mobile App", "Consultoria", "Outro"].map((type) => (
-                      <Button 
-                        key={type}
-                        variant="outline" 
-                        size="sm"
-                        className="justify-start hover:bg-primary hover:text-primary-foreground transition-colors"
-                      >
-                        {type}
-                      </Button>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">
-                    Orçamento Estimado
-                  </label>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                    {["< R$ 10k", "R$ 10k - 50k", "R$ 50k - 100k", "> R$ 100k"].map((budget) => (
-                      <Button 
-                        key={budget}
-                        variant="outline" 
-                        size="sm"
-                        className="justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors text-xs"
-                      >
-                        {budget}
-                      </Button>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">
-                    Descreva seu Projeto *
-                  </label>
-                  <Textarea 
-                    placeholder="Conte-me mais sobre seu projeto, objetivos, timeline e requisitos técnicos..."
-                    className="min-h-[120px] bg-background/50 border-border/50 focus:border-primary transition-colors"
-                  />
-                </div>
-
-                <div className="flex items-center space-x-4 pt-4">
-                  <Button 
-                    size="lg" 
-                    className="bg-gradient-tech hover:shadow-tech flex-1 md:flex-none group"
-                  >
-                    <Send className="mr-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    Enviar Mensagem
-                  </Button>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    Pronto para começar seu projeto?
+                  </h3>
+                  <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+                    Clique no botão abaixo e vamos conversar diretamente no WhatsApp. 
+                    Resposta garantida em poucas horas!
+                  </p>
                   
-                  <div className="text-xs text-muted-foreground">
-                    Resposta garantida em 24h
+                  <a 
+                    href="https://wa.me/5591984201810?text=Olá! Vim através do seu portfólio e gostaria de conversar sobre um projeto."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                  >
+                    <MessageCircle className="w-6 h-6" />
+                    <span>Conversar no WhatsApp</span>
+                  </a>
+                  
+                  <div className="mt-4 text-sm text-muted-foreground">
+                    <p>📱 +55 (91) 98420-1810</p>
+                    <p>⏰ Resposta em até 2 horas</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t">
+                  <div className="text-center p-4 bg-accent/30 rounded-lg">
+                    <h4 className="font-semibold text-foreground mb-2">🚀 Projetos Rápidos</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Landing pages, sites institucionais e aplicações simples
+                    </p>
+                  </div>
+                  <div className="text-center p-4 bg-accent/30 rounded-lg">
+                    <h4 className="font-semibold text-foreground mb-2">💼 Projetos Complexos</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Sistemas completos, e-commerce e aplicações empresariais
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -304,13 +258,22 @@ const Contact = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-fade-in delay-700">
           <div className="inline-flex items-center space-x-2 text-sm text-muted-foreground mb-4">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>Normalmente respondo em algumas horas</span>
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span>Online agora - Resposta em até 2 horas</span>
           </div>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Prefere uma conversa mais direta? Agende uma call de 30 minutos para 
-            discutirmos seu projeto sem compromisso.
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+            Pronto para transformar sua ideia em realidade? Vamos conversar no WhatsApp 
+            e discutir seu projeto sem compromisso.
           </p>
+          <a 
+            href="https://wa.me/5591984201810?text=Olá! Vim através do seu portfólio e gostaria de conversar sobre um projeto."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <MessageCircle className="w-5 h-5" />
+            <span>Iniciar Conversa</span>
+          </a>
         </div>
       </div>
     </section>

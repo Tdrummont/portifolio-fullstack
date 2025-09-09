@@ -11,13 +11,8 @@ const About = () => {
     },
     {
       icon: Rocket,
-      title: "Muitos Projetos Entregues",
+      title: "Projetos Entregues",
       description: "Soluções completas para startups e grandes empresas"
-    },
-    {
-      icon: Users,
-      title: "Liderança Técnica",
-      description: "Mentoria de equipes e arquitetura de sistemas escaláveis"
     },
     {
       icon: Award,
@@ -27,8 +22,8 @@ const About = () => {
   ];
 
   const values = [
-    "Clean Code", "Performance", "Escalabilidade", "Inovação", 
-    "Colaboração", "Aprendizado Contínuo", "Qualidade", "Agilidade"
+    "Clean Code", "SOLID", "Escalabilidade", "Inovação", 
+    "Colaboração", "Qualidade", "UX/UI", "Performance"
   ];
 
   return (
@@ -43,25 +38,29 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Sou uma <strong className="text-foreground">desenvolvedora fullstack </strong> apaixonada 
-                por criar soluções digitais que fazem a diferença. Com mais de 4 anos de experiência, 
-                especializo-me em <strong className="text-primary">arquiteturas escaláveis</strong> e 
-                <strong className="text-primary"> experiências de usuário excepcionais</strong>.
+                Graduada em <strong className="text-foreground">Análise e Desenvolvimento de Sistemas - Estácio Iesam</strong> 
+                , transformo conhecimento acadêmico em <strong className="text-primary">
+                soluções práticas e inovadoras</strong>. Minha paixão está em criar produtos digitais 
+                que realmente impactam a vida das pessoas, sempre aplicando as melhores práticas 
+                de desenvolvimento.
               </p>
               
               <p>
-                Minha jornada começou com curiosidade sobre como funcionam as aplicações web, 
-                e evolui para liderar equipes técnicas em projetos de alta complexidade. 
-                Trabalho com as mais modernas tecnologias do mercado, sempre priorizando 
-                <strong className="text-secondary"> performance</strong> e 
-                <strong className="text-secondary"> qualidade de código</strong>.
+                Especializo-me em <strong className="text-primary">Clean Code</strong> e princípios s
+                <strong className="text-primary"> SOLID</strong>, garantindo que cada linha de código 
+                seja não apenas funcional, mas também <strong className="text-secondary">manutenível</strong>, 
+                <strong className="text-secondary"> escalável</strong> e 
+                <strong className="text-secondary"> eficiente</strong>. Acredito que código limpo 
+                é a base para projetos de sucesso a longo prazo.
               </p>
               
               <p>
-                Além do desenvolvimento, sou mentor de novos talentos e contribuo ativamente 
-                para a comunidade open source. Acredito que o <strong className="text-primary">
-                conhecimento compartilhado</strong> é a base para construirmos um ecossistema 
-                tecnológico mais forte e inovador.
+                Minha motivação diária é <strong className="text-foreground">colaborar com equipes 
+                talentosas</strong> para impulsionar produtos digitais e entregar valor real aos 
+                usuários finais. Trabalho com foco em <strong className="text-primary">soluções 
+                escaláveis</strong> que crescem junto com o negócio, sempre priorizando a 
+                <strong className="text-secondary"> experiência do usuário</strong> e a 
+                <strong className="text-secondary"> qualidade técnica</strong>.
               </p>
             </div>
 

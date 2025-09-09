@@ -112,7 +112,7 @@ const BookingSection = () => {
                   <MapPin className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">Endereço</p>
-                    <p className="text-muted-foreground">Rua das Flores, 123<br />Centro, São Paulo - SP</p>
+                    <p className="text-muted-foreground">Belém - PA</p>
                   </div>
                 </div>
                 
@@ -120,7 +120,7 @@ const BookingSection = () => {
                   <Phone className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">Telefone</p>
-                    <p className="text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-muted-foreground">(91) 98420-1810</p>
                   </div>
                 </div>
                 

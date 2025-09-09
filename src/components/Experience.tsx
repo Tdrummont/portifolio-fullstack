@@ -1,83 +1,100 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building, Calendar, MapPin, Users, TrendingUp, Award } from "lucide-react";
+import { Building, Calendar, MapPin, Users, TrendingUp, Award, Languages } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      company: "TechCorp Solutions",
-      position: "Senior Fullstack Developer & Tech Lead",
-      period: "2022 - Presente",
-      location: "São Paulo, SP (Remoto)",
-      type: "Tempo Integral",
-      description: "Lidero equipe de 8 desenvolvedores na criação de soluções escaláveis para fintech. Responsável pela arquitetura de microserviços que processa 1M+ transações diárias.",
+      company: "Polícia Civil",
+      position: "Desenvolvedora Fullstack",
+      period: "2024 - Presente",
+      location: "Belém, PA",
+      type: "Projeto Específico",
+      description: "Desenvolvi sistema interno completo para gerenciamento de cartas precatórias, garantindo eficiência e segurança no processo judicial. A plataforma centraliza todo o fluxo de trabalho, desde a geração até o rastreamento de protocolos.",
       achievements: [
-        "Reduziu latência da API em 60% otimizando queries e implementando cache Redis",
-        "Implementou CI/CD que aumentou deployment frequency em 300%",
-        "Mentoreou 5 desenvolvedores júnior, com 100% de promoção interna",
-        "Arquitetou sistema que suporta 50k usuários simultâneos"
+        "Implementou geração automatizada de protocolos únicos com rastreamento por estado",
+        "Desenvolveu sistema de autenticação segura via e-mail institucional",
+        "Criou integração de envio direto de protocolos por e-mail",
+        "Aplicou Clean Code e princípios SOLID garantindo manutenibilidade do sistema"
       ],
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "PostgreSQL"],
-      companySize: "200-500",
-      industry: "Fintech"
+      technologies: ["PHP", "Laravel", "Vue 3", "TypeScript", "PostgreSQL", "RESTful API"],
+      companySize: "1000+",
+      industry: "Segurança Pública"
     },
     {
-      company: "StartupXYZ",
-      position: "Fullstack Developer",
-      period: "2020 - 2022",
-      location: "São Paulo, SP",
-      type: "Tempo Integral",
-      description: "Desenvolvedor full-stack em startup de crescimento rápido. Participei do crescimento de 0 a 100k usuários, implementando features críticas e otimizações de performance.",
-      achievements: [
-        "Desenvolveu MVP que gerou $1M em revenue no primeiro ano",
-        "Implementou sistema de notificações real-time para 100k+ usuários",
-        "Criou dashboard analytics que reduziu churn em 25%",
-        "Estabeleceu práticas de code review que reduziram bugs em 40%"
-      ],
-      technologies: ["Vue.js", "Python", "MongoDB", "Redis", "AWS", "Stripe"],
-      companySize: "10-50",
-      industry: "SaaS"
-    },
-    {
-      company: "Agência Digital Premium",
-      position: "Frontend Developer",
-      period: "2018 - 2020",
-      location: "São Paulo, SP",
-      type: "Tempo Integral",
-      description: "Desenvolvedor frontend especializado em e-commerce e landing pages de alta conversão. Trabalhei com clientes enterprise criando experiências web premium.",
-      achievements: [
-        "Desenvolveu 30+ projetos com taxa de conversão média de 15%",
-        "Implementou Progressive Web Apps que aumentaram engagement em 80%",
-        "Criou sistema de componentes reutilizáveis usado por 20+ projetos",
-        "Obteve 99+ scores no Lighthouse em todos os projetos"
-      ],
-      technologies: ["React", "JavaScript", "Sass", "Webpack", "Figma", "WordPress"],
-      companySize: "50-100",
-      industry: "Agência Digital"
-    },
-    {
-      company: "FreelanceDev",
-      position: "Desenvolvedor Freelancer",
-      period: "2016 - 2018",
+      company: "OSM Consultoria e Sistemas",
+      position: "Analista de Sistemas",
+      period: "2023 - 2024",
       location: "Remoto",
-      type: "Freelancer",
-      description: "Freelancer especializado em soluções web para PMEs. Desenvolvi desde landing pages até sistemas completos de gestão, sempre focando em performance e usabilidade.",
+      type: "Tempo Integral",
+      description: "Atuei na manutenção e evolução de sistemas legados, garantindo estabilidade e continuidade das operações. Responsável por correção de falhas, implementação de melhorias e suporte técnico especializado.",
       achievements: [
-        "Completei 50+ projetos com 98% de satisfação do cliente",
-        "Desenvolveu sistema ERP que aumentou produtividade em 200%",
-        "Criou e-commerce que gerou R$2M em vendas no primeiro ano",
-        "Construí rede de 20+ clientes recorrentes"
+        "Manteve estabilidade de sistemas críticos com 99.9% de uptime",
+        "Implementou melhorias que aumentaram performance em 30%",
+        "Realizou suporte técnico especializado para clientes e áreas internas",
+        "Desenvolveu soluções para sistemas legados com foco em qualidade e eficiência"
       ],
-      technologies: ["JavaScript", "PHP", "MySQL", "jQuery", "Bootstrap", "WordPress"],
-      companySize: "1",
-      industry: "Diversos"
-    }
+      technologies: ["Caché", "InterSystems", "Sistemas Legados", "Banco de Dados OO", "Suporte Técnico"],
+      companySize: "50-100",
+      industry: "Consultoria em TI"
+    },
+    {
+      company: "ParáFood",
+      position: "Desenvolvedora Fullstack",
+      period: "2025 - 2025",
+      location: "Belém, PA",
+      type: "Projeto Proprietário",
+      description: "Desenvolvi o APP ParáFood, uma plataforma completa de delivery para restaurantes, oferecendo ecossistema integrado de gestão para o setor alimentício. O sistema atende gestores e clientes finais com funcionalidades avançadas.",
+      achievements: [
+        "Criou sistema completo de gestão de colaboradores e operações de restaurante",
+        "Implementou dashboard com relatórios e métricas em tempo real",
+        "Desenvolveu integração de pagamentos (PIX, cartão e delivery)",
+        "Construiu sistema de recebimento e acompanhamento de pedidos em tempo real"
+      ],
+      technologies: ["PHP", "Laravel", "Vue 3", "TypeScript", "TailwindCSS", "PostgreSQL"],
+      companySize: "1-10",
+      industry: "FoodTech"
+    },
+    {
+      company: "TaskForce",
+      position: "Desenvolvedora Fullstack",
+      period: "2025 - 2025",
+      location: "Remoto",
+      type: "Projeto Proprietário",
+      description: "Desenvolvi o TaskForce, um sistema completo de gerenciamento de tarefas com interface moderna e intuitiva. A plataforma oferece funcionalidades avançadas para gerenciar projetos de forma eficiente e colaborativa.",
+      achievements: [
+        "Implementou sistema drag & drop para gerenciamento intuitivo de tarefas",
+        "Desenvolveu notificações em tempo real para colaboração eficiente",
+        "Criou integração com Google OAuth para autenticação segura",
+        "Construiu interface moderna e responsiva com Vue.js 3 e Inertia.js"
+      ],
+      technologies: ["Laravel 8.1+", "Vue.js 3", "Inertia.js", "Google OAuth", "MySQL", "Real-time"],
+      companySize: "1-10",
+      industry: "Productivity Software"
+    },
+    {
+      company: "Angels Academy",
+      position: "Desenvolvedora Fullstack",
+      period: "2025 - 2025",
+      location: "Belém, PA",
+      type: "Projeto Específico",
+      description: "Desenvolvi plataforma completa de vídeo aulas para escola de inglês usando stack 100% gratuita. Sistema com dashboard do professor para gerenciar alunos e aulas, área do aluno com acesso organizado por módulos, e interface totalmente responsiva.",
+      achievements: [
+        "Implementou sistema de upload e organização de vídeos via YouTube (gratuito e ilimitado)",
+        "Criou dashboard do professor com controle de acesso por níveis (básico, intermediário, avançado)",
+        "Desenvolveu área do aluno com marcação de 'aula assistida' e downloads de materiais",
+        "Construiu sistema de autenticação e relatórios de progresso dos alunos"
+      ],
+      technologies: ["React 18", "Next.js 14", "TypeScript", "Tailwind CSS", "Supabase", "YouTube API", "NextAuth.js"],
+      companySize: "10-50",
+      industry: "EdTech"
+    },
   ];
 
   const stats = [
-    { label: "Anos de Experiência", value: "8+", icon: Calendar },
-    { label: "Projetos Entregues", value: "100+", icon: TrendingUp },
-    { label: "Desenvolvedores Mentorados", value: "15+", icon: Users },
+    { label: "Anos de Experiência", value: "4+", icon: Calendar },
+    { label: "Projetos Entregues", value: "10+", icon: TrendingUp },
+    { label: "Linguagens", value: "2", icon: Languages },
     { label: "Certificações", value: "5", icon: Award }
   ];
 

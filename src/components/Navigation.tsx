@@ -42,8 +42,12 @@ const Navigation = () => {
             className="flex items-center space-x-2 group"
             onClick={() => setIsMenuOpen(false)}
           >
-            <div className="w-8 h-8 bg-gradient-tech rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+              <img 
+                src="/dino-nerd.ico" 
+                alt="Dino Nerd Logo" 
+                className="w-8 h-8 object-contain"
+              />
             </div>
             <span className="font-bold text-xl gradient-text">DevPortfolio</span>
           </a>

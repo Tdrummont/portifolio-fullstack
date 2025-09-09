@@ -6,24 +6,24 @@ import { ExternalLink, Github, Play, Star, Users, Zap } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Plataforma completa de e-commerce com dashboard administrativo, sistema de pagamentos, analytics em tempo real e performance otimizada.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Stripe"],
-      stats: { users: "50k+", performance: "98%", uptime: "99.9%" },
-      highlights: ["PWA", "Real-time", "Mobile-first"],
-      github: "https://github.com",
+      title: "Cartas Precatórias",
+      description: "Sistema completo de gerenciamento de cartas precatórias para a Polícia Civil. Desenvolvido com Laravel (backend) e Vue 3 + TypeScript (frontend), oferece geração automática de protocolos, rastreamento por estado e autenticação segura. Implementa Clean Code, SOLID e arquitetura RESTful com PostgreSQL.",
+      image: "/img/carta-precatoria.png",
+      technologies: ["Laravel", "Vue 3", "TypeScript", "PostgreSQL", "PHP"],
+      stats: { protocols: "1000+", security: "100%", uptime: "99.9%" },
+      highlights: ["RESTful API", "Clean Code", "SOLID"],
+      github: "https://github.com/Tdrummont",
       demo: "https://demo.com",
       featured: true
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Dashboard inteligente com machine learning para análise preditiva de dados, visualizações interativas e relatórios automatizados.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "Python", "TensorFlow", "D3.js", "Docker"],
-      stats: { accuracy: "94%", speed: "2x faster", insights: "1000+" },
-      highlights: ["AI/ML", "Real-time", "Predictive"],
-      github: "https://github.com",
+      title: "Pará Food Sistema de Delivery de Restaurantes",
+      description: "Plataforma completa de delivery de restaurantes, desenvolvida com arquitetura moderna e escalável. Oferece gestão completa de pedidos, integração com restaurantes, sistema de pagamentos, rastreamento em tempo real e painel administrativo robusto. Implementa autenticação segura, notificações push e otimização de rotas para entregadores.",
+      image: "/img/para-food.png",
+      technologies: ["PHP", "Laravel", "React.js", "TypeScript", "PostgreSQL"],
+      stats: { orders: "5000+", restaurants: "50+", delivery: "15min" },
+      highlights: ["Real-time", "Payment Gateway", "Mobile-First"],
+      github: "https://github.com/Tdrummont",
       demo: "https://demo.com",
       featured: true
     },
@@ -39,13 +39,13 @@ const Projects = () => {
       featured: false
     },
     {
-      title: "Real-time Collaboration Tool",
+      title: "TaskForce Collaboration Tool",
       description: "Ferramenta de colaboração em tempo real com sincronização multi-usuário, chat integrado e compartilhamento de arquivos.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
-      technologies: ["Next.js", "Socket.io", "Redis", "MongoDB", "WebRTC"],
+      technologies: ["vue.js", "WebSocket", "Redis", "PostgresSQL", "PHP-Laravel"],
       stats: { users: "10k+", latency: "<50ms", uptime: "99.8%" },
       highlights: ["Real-time", "Collaborative", "WebRTC"],
-      github: "https://github.com",
+      github: "https://github.com/Tdrummont",
       demo: "https://demo.com",
       featured: false
     }
@@ -223,7 +223,7 @@ const Projects = () => {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground group"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Tdrummont" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 w-5 h-5 group-hover:rotate-12 transition-transform" />
               Ver Todos os Projetos
             </a>

@@ -25,8 +25,8 @@ const Navigation = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/Tdrummont", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/thalita-s-costa/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:dev@email.com", label: "Email" }
   ];
 

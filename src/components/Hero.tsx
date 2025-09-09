@@ -30,22 +30,24 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight animate-fade-in">
-            <span className="block text-foreground">Desenvolvedor</span>
-            <span className="gradient-text animate-glow">Fullstack Senior</span>
+            <span className="block text-foreground">Olá! Eu sou a</span>
+            <span className="gradient-text animate-glow">Thalita</span>
           </h1>
 
           {/* Typing Animation Subtitle */}
           <div className="text-xl md:text-2xl text-muted-foreground mb-8 font-mono h-8 animate-fade-in delay-300">
-            <span className="typing-animation">Transformando ideias em soluções digitais inovadoras</span>
+            <span className="typing-animation">Desenvolvedora Full Stack de Belém, Brasil</span>
           </div>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in delay-500">
-            Especialista em <span className="text-primary font-semibold">React</span>, 
-            <span className="text-primary font-semibold"> Node.js</span>, 
-            <span className="text-primary font-semibold"> TypeScript</span> e 
-            <span className="text-primary font-semibold"> Cloud Architecture</span>. 
-            Criando experiências web excepcionais há mais de 8 anos.
+            Desenvolvedora Full Stack com foco em arquitetura moderna de software, apaixonada por código limpo, automações e boas práticas. 
+            Especialista em <span className="text-primary font-semibold">Laravel 12</span>, 
+            <span className="text-primary font-semibold"> Vue 3</span>, 
+            <span className="text-primary font-semibold"> Vuetify</span>, 
+            <span className="text-primary font-semibold"> TailwindCSS</span> e 
+            <span className="text-primary font-semibold"> Clean Code</span>. 
+            Cofundadora do grupo YggdraCode.
           </p>
 
           {/* CTA Buttons */}
@@ -53,6 +55,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-tech hover:shadow-tech transform hover:scale-105 transition-all duration-300 px-8 py-4 text-lg group"
+              onClick={() => window.open('https://github.com/Tdrummont', '_blank')}
             >
               <Github className="mr-2 w-5 h-5 group-hover:rotate-12 transition-transform" />
               Ver Projetos
@@ -71,10 +74,10 @@ const Hero = () => {
           {/* Tech Stack Preview */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 animate-fade-in delay-1000">
             {[
-              { name: "React", level: "Expert" },
-              { name: "Node.js", level: "Expert" },
-              { name: "TypeScript", level: "Expert" },
-              { name: "AWS", level: "Advanced" }
+              { name: "Laravel", level: "Expert" },
+              { name: "Vue 3", level: "Expert" },
+              { name: "PHP", level: "Expert" },
+              { name: "TailwindCSS", level: "Expert" },
             ].map((tech, index) => (
               <div 
                 key={tech.name}
@@ -93,9 +96,9 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-8 animate-fade-in delay-1200">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:dev@email.com", label: "Email" }
+              { icon: Github, href: "https://github.com/Tdrummont", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/thalita-s-costa/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:tdrummontt@gmail.com", label: "Email" }
             ].map((social) => {
               const IconComponent = social.icon;
               return (

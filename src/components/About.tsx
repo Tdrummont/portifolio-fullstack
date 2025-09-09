@@ -6,12 +6,12 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: "8+ Anos de Experiência",
+      title: "4+ Anos de Experiência",
       description: "Desenvolvimento web e mobile com foco em performance e UX"
     },
     {
       icon: Rocket,
-      title: "50+ Projetos Entregues",
+      title: "Muitos Projetos Entregues",
       description: "Soluções completas para startups e grandes empresas"
     },
     {
@@ -43,8 +43,8 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Sou um <strong className="text-foreground">desenvolvedor fullstack senior</strong> apaixonado 
-                por criar soluções digitais que fazem a diferença. Com mais de 8 anos de experiência, 
+                Sou uma <strong className="text-foreground">desenvolvedora fullstack </strong> apaixonada 
+                por criar soluções digitais que fazem a diferença. Com mais de 4 anos de experiência, 
                 especializo-me em <strong className="text-primary">arquiteturas escaláveis</strong> e 
                 <strong className="text-primary"> experiências de usuário excepcionais</strong>.
               </p>

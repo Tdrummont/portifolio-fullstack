@@ -22,10 +22,10 @@ const Skills = () => {
       color: "text-primary",
       bgColor: "bg-primary/10",
       skills: [
-        { name: "React/Next.js", level: 95, years: "5+ anos" },
-        { name: "TypeScript", level: 92, years: "4+ anos" },
-        { name: "Vue.js", level: 85, years: "3+ anos" },
-        { name: "Tailwind CSS", level: 90, years: "3+ anos" }
+        { name: "React/Next.js",  years: "3+ anos" },
+        { name: "TypeScript",  years: "4+ anos" },
+        { name: "Vue.js",   years: "4+ anos" },
+        { name: "Tailwind CSS",  years: "3+ anos" }
       ]
     },
     {
@@ -34,10 +34,10 @@ const Skills = () => {
       color: "text-secondary",
       bgColor: "bg-secondary/10",
       skills: [
-        { name: "Node.js", level: 94, years: "6+ anos" },
-        { name: "Python", level: 88, years: "4+ anos" },
-        { name: "Go", level: 80, years: "2+ anos" },
-        { name: "GraphQL", level: 87, years: "3+ anos" }
+        { name: "Node.js",years: "4+ anos" },
+        { name: "Python", years: "1+ anos" },
+        { name: "Go", years: "1+ anos" },
+        { name: "PHP", years: "4+ anos" }
       ]
     },
     {
@@ -46,10 +46,10 @@ const Skills = () => {
       color: "text-accent-purple",
       bgColor: "bg-accent-purple/10",
       skills: [
-        { name: "PostgreSQL", level: 90, years: "5+ anos" },
-        { name: "MongoDB", level: 88, years: "4+ anos" },
-        { name: "Redis", level: 85, years: "3+ anos" },
-        { name: "Elasticsearch", level: 80, years: "2+ anos" }
+        { name: "PostgreSQL",  years: "4+ anos" },
+        { name: "Caché",  years: "1+ anos" },
+        { name: "Redis", years: "3+ anos" },
+        { name: "Elasticsearch",  years: "2+ anos" }
       ]
     },
     {
@@ -58,16 +58,16 @@ const Skills = () => {
       color: "text-primary",
       bgColor: "bg-primary/10",
       skills: [
-        { name: "AWS", level: 92, years: "4+ anos" },
-        { name: "Docker", level: 90, years: "4+ anos" },
-        { name: "Kubernetes", level: 85, years: "3+ anos" },
-        { name: "Terraform", level: 82, years: "2+ anos" }
+        { name: "AWS", years: "4+ anos" },
+        { name: "Docker", years: "4+ anos" },
+        { name: "Kubernetes",  years: "3+ anos" },
+        { name: "Terraform",  years: "2+ anos" }
       ]
     }
   ];
 
   const tools = [
-    "VS Code", "Git", "Docker", "Figma", "Postman", "Slack", 
+    "VS Code", "Git", "Docker", "Figma", "Postman", "Cursor",  
     "Jira", "Notion", "Linear", "Vercel", "Netlify", "Supabase"
   ];
 
@@ -131,12 +131,10 @@ const Skills = () => {
                       <div className="flex justify-between items-center">
                         <span className="font-medium text-foreground">{skill.name}</span>
                         <div className="text-right">
-                          <span className="text-sm font-semibold text-primary">{skill.level}%</span>
                           <span className="text-xs text-muted-foreground ml-2">{skill.years}</span>
                         </div>
                       </div>
                       <Progress 
-                        value={skill.level} 
                         className="h-2 bg-muted"
                         style={{
                           animationDelay: `${(index * 0.1) + (skillIndex * 0.1)}s`
